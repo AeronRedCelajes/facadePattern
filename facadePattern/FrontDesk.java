@@ -1,7 +1,7 @@
 package facadePattern;
 
 public class FrontDesk {
-    public void specificService (HotelService hotelService){
+    public void specificHotelService(HotelService hotelService){
         hotelService.executeHotelService();
     }
 }

@@ -48,7 +48,7 @@ public class HotelApp {
 
                     //performs the valet service
                     HotelService valetService = new Valet(plateNumber);
-                    frontDesk.specificService(valetService);
+                    frontDesk.specificHotelService(valetService);
                     break;
                 case "2":
                     System.out.println("\nHOUSEKEEPING SERVICE");
@@ -57,7 +57,7 @@ public class HotelApp {
 
                     //performs the housekeeping service
                     HotelService housekeepingService = new HouseKeeping(roomNumber);
-                    frontDesk.specificService(housekeepingService);
+                    frontDesk.specificHotelService(housekeepingService);
                     break;
                 case "3":
                     boolean cartInputValid = false;
@@ -71,7 +71,7 @@ public class HotelApp {
 
                             //performs the cart service
                             HotelService cartService = new Cart(numberOfCarts);
-                            frontDesk.specificService(cartService);
+                            frontDesk.specificHotelService(cartService);
                             cartInputValid = true;
 
                         }catch (Exception e){
